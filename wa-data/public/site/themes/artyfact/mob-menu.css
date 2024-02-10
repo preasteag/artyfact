@@ -1,0 +1,58 @@
+.mob-menu {
+  display: block;
+  position: absolute;
+  top: -200vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: #141416; */
+  background: rgba(20, 20, 22, 0.9);
+  padding: 50px 10px;
+  padding-top: 80px;
+  transition: 0.3s;
+  text-align: center;
+  overflow: auto;
+  /* background-color: rgba(72, 93, 119, 0.3); */
+  /* -webkit-backdrop-filter: blur(20px); */
+  /* backdrop-filter: blur(20px); */
+}
+.dinamic-menu {
+  width: 23px;
+  height: 23px;
+  position: relative;
+  cursor: pointer;
+}
+.dinamic-menu .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  border-top: 3px solid #F3BA2F;
+  transition: 0.4s;
+}
+.dinamic-menu .middle {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 23px;
+  border-top: 3px solid #F3BA2F;
+  transition: 0.3s;
+}
+.dinamic-menu .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 23px;
+  border-top: 3px solid #F3BA2F;
+  transition: 0.4s;
+}
+.dinamic-menu.active .top {
+  width: 23px;
+  transform: rotate(-60deg);
+  top: 10px;
+  left: -6px;
+}
+.dinamic-menu.active .middle {
+  transform: rotate(60deg);
+  left: 6px;
+}
