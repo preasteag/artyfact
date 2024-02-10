@@ -1,0 +1,85 @@
+.team {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team__block {
+  width: 48%;
+  /* background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0.1),
+    hsla(0, 0%, 100%, 0.11) 31%
+  ); */
+  border-radius: 20px;
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 20px;
+  /* border: 1px solid rgba(238, 237, 242, 0.34); */
+}
+.team__ava-block {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.team__ava {
+  width: 200px;
+  border-radius: 20px;
+}
+.team__social-block {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.team__link {
+  margin-left: 10px;
+  color: #fcfcfd;
+}
+.team__social-block:first-child {
+  margin-left: 0;
+}
+.team__link:hover {
+  color: #fcfcfd;
+}
+.team__link img,
+.team__link svg {
+  width: 25px;
+  font-size: 25px;
+}
+.team__name {
+  padding-top: 240px;
+  color: #d8b168;
+  font-weight: 600;
+  font-size: 24px;
+  /* font-family: "Poppins", "Noto Sans SC", "Noto Sans KR", sans-serif; */
+  text-align: center;
+}
+.team__description {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  color: #fcfcfd;
+  margin-top: 5px;
+  /* font-family: "Poppins", "Noto Sans SC", "Noto Sans KR", sans-serif; */
+  padding: 0 20px;
+}
+@media (max-width: 800px) {
+  .team__block {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .team__ava {
+    width: 160px;
+  }
+  .team__social-block {
+    position: static;
+    text-align: center;
+    padding-top: 200px;
+  }
+  .team__name {
+    padding-top: 20px;
+  }
+}
